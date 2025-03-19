@@ -27,7 +27,7 @@ const ServiceHistory = ({ services }) => {
                 />
             </div>
             <ul className="space-y-2">
-                {filteredServices.map(service => (
+                {filteredServices.map(service => ( 
                     <li key={service.id} className="p-2 border rounded">
                         <p><strong>Date:</strong> {service.date_time}</p>
                         <p><strong>Service:</strong> {service.service_type}</p>
