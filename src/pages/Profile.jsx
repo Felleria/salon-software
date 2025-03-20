@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { getClientServices } from '../api/api';
 import ClientForm from '../components/ClientForm';
 import ServiceHistory from '../components/ServiceHistory';
-import Preferences from "../components/Preferences";
+// import Preferences from "../components/Preferences";
 
 
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getClients, getStylists, getServiceTypes } from '../api/api';
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
+// import Sidebar from '../components/Sidebar';
 import ClientList from '../components/ClientList';
 import QuickView from '../components/QuickView';
 import Recommendation from '../components/Recommendation';

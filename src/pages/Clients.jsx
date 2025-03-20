@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getClients } from '../api/api';
 import ClientList from '../components/ClientList';
-import ClientProfile from '../components/ClientProfile';
+// import ClientProfile from '../components/ClientProfile';
 
 const Clients = () => {
     const [clients, setClients] = useState([]);
