@@ -1,29 +1,30 @@
-import React, { useState } from "react";
-import ClientProfileForm from "./components/ClientProfileForm";
-import ServiceHistory from "./components/ServiceHistory";
-import ClientPreferences from "./components/ClientPreferences";
-import ClientSearch from "./components/ClientSearch";
-import UpcomingAppointments from "./components/UpcomingAppointments";
-import ServiceRecommendations from "./components/ServiceRecommendations";
+// App.jsx
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Dashboard from './components/Dashboard';
+import ClientList from './components/ClientList';
+import ClientDetail from './components/ClientDetail';
+import ClientProfileForm from './components/ClientProfileForm';
 
-const App = () => {
-  const [selectedClient, setSelectedClient] = useState(null);
-
+function App() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Salon Management System</h1>
-      <ClientSearch onSearch={(clients) => setSelectedClient(clients[0])} />
-      {selectedClient && (
-        <>
-          <ClientProfileForm client={selectedClient} onSubmit={() => {}} />
-          <ServiceHistory clientId={selectedClient.id} />
-          <ClientPreferences clientId={selectedClient.id} />
-        </>
-      )}
-      <UpcomingAppointments />
-      <ServiceRecommendations />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <div className="container mx-auto px-4 py-8">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/clients" element={<ClientList />} />
+            <Route path="/clients/new" element={<ClientProfileForm />} />
+            <Route path="/clients/:clientId" element={<ClientDetail />} />
+            <Route path="/clients/:clientId/edit" element={<ClientProfileForm />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
