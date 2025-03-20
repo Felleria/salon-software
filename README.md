@@ -2,6 +2,7 @@
 
 ## Overview
 This project is a full-stack application for salon client management, designed to help stylists track client information, service history, and preferences.
+https://github.com/Felleria/salon-software/blob/main/Dashboard.png?raw=true
 
 ## Features
 - Client profile management (create, read, update)
