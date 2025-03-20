@@ -36,7 +36,7 @@ This project is a full-stack application for salon client management, designed t
 ### Frontend Setup
 1. Navigate to the frontend directory:
    ```
-   cd frontend
+   cd client
    ```
 
 2. Install dependencies:
@@ -46,7 +46,7 @@ This project is a full-stack application for salon client management, designed t
 
 3. Start the development server:
    ```
-   npm start
+   npm run dev 
    ```
    The application will open at http://localhost:3000
 
