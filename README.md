@@ -229,3 +229,8 @@ Updates existing preferences for a client.
 4. Create reports and analytics for salon performance
 5. Implement push notifications for appointment reminders
 6. Add AI-powered product recommendations based on client history
+
+## challenges faced 
+1. Time Constraints: The 8-hour time limit was challenging, especially given the scope of the project. I had to prioritize core features over additional enhancements. 
+2. Backend Integration:
+Integrating the frontend with the Flask backend required careful handling of API requests and responses, which took more time than anticipated.
