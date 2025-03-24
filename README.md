@@ -1,14 +1,19 @@
 # Salon Software System
 
 ## Overview
-This project is a full-stack application for salon client management, designed to help stylists track client information, service history, and preferences.
-![image alt](https://github.com/Felleria/salon-software/blob/main/Dashboard.png?raw=true) 
+An application for salon client management, designed to help stylists track client information, service history, and preferences.
+![image alt](https://github.com/Alex-Tuem/TuemConsulting/blob/main/salon-software/LaVida%20Screenshot%20.png?raw=true) 
 
 ## Features
 - Client profile management (create, read, update)
+ ![image alt](https://github.com/Alex-Tuem/TuemConsulting/blob/main/salon-software/CRUDScreenshot%20.png?raw=true)
 - Service history tracking
+  ![image alt](https://github.com/Alex-Tuem/TuemConsulting/blob/main/salon-software/ServiceTrackingScreenshot.png?raw=true)
 - Client preferences and notes
+ ![image alt](https://github.com/Alex-Tuem/TuemConsulting/blob/main/salon-software/Client%20PreferenceScreenshot%20.png?raw=true)
 - Interactive search and filtering
+ ![image alt](https://github.com/Alex-Tuem/TuemConsulting/blob/main/salon-software/Filter.png?raw=true)
+ 
 
 ## Tech Stack
 - **Frontend**: React.js, Tailwind CSS
@@ -17,18 +22,30 @@ This project is a full-stack application for salon client management, designed t
 
 ## Setup Instructions
 
+### Navigate the salon-software directory
+
+### enter main directory
+1. Navigate to the main salon-software directory:
+   ```
+   cd salon-software
+   ```
+
 ### Backend Setup
-1. Install required packages:
+1. Navigate to the frontend directory:
+   ```
+   cd server
+   ```
+2. Install required packages:
    ```
    pip install flask flask-sqlalchemy flask-cors
    ```
 
-2. Initialize the database:
+3. Initialize the database:
    ```
    python setup_db.py
    ```
 
-3. Start the Flask server:
+4. Start the Flask server:
    ```
    python app.py
    ```
@@ -37,7 +54,7 @@ This project is a full-stack application for salon client management, designed t
 ### Frontend Setup
 1. Navigate to the frontend directory:
    ```
-   cd client
+   cd salon-software
    ```
 
 2. Install dependencies:
@@ -63,8 +80,8 @@ Response:
 [
   {
     "id": 1,
-    "name": "John Doe",
-    "contact_details": "john.doe@example.com",
+    "name": "John Omollo",
+    "contact_details": "john.doe@gmail.com",
     "birthday": "1990-01-01",
     "hair_skin_type": "Oily",
     "allergies": "None",
@@ -83,7 +100,7 @@ Response:
 {
   "id": 1,
   "name": "John Doe",
-  "contact_details": "john.doe@example.com",
+  "contact_details": "john.doe@gmail.com",
   "birthday": "1990-01-01",
   "hair_skin_type": "Oily",
   "allergies": "None",
@@ -100,7 +117,7 @@ Request:
 ```json
 {
   "name": "Jane Smith",
-  "contact_details": "jane.smith@example.com",
+  "contact_details": "jane.smith@gmail.com",
   "birthday": "1992-05-15",
   "hair_skin_type": "Dry",
   "allergies": "Fragrance",
